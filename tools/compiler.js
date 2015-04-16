@@ -301,6 +301,7 @@ var compileUnibuild = function (options) {
           return;
         }
         compilerPluginsByExtension[ext] = compilerPlugin;
+        sourceExtensions[ext] = compilerPlugin.isTemplate;
       });
     });
   });
