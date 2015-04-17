@@ -287,7 +287,7 @@ var compileUnibuild = function (options) {
     });
 
     // Iterate over the compiler plugins.
-    _.each(otherPkg.compilerPlugins, function (compilerPlugin, id) {
+    _.each(otherPkg.plugins.compiler, function (compilerPlugin, id) {
       _.each(compilerPlugin.extensions, function (ext) {
         if (_.has(allHandlersWithPkgs, ext) ||
             _.has(compilerPluginsByExtension, ext)) {
